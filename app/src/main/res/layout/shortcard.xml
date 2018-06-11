@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main_1_4_2"
+    android:layout_width="180dp"
+    android:layout_height="170dp"
+    android:layout_weight="1"
+    android:background="?attr/selectableItemBackground"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    card_view:cardElevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
+        android:id="@+id/aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/img_main_card_42"
+            android:layout_width="103dp"
+            android:layout_height="97dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/learning" />
+
+        <TextView
+            android:id="@+id/tv_card_main_42_title"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="168dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:text="Students"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/no_of_stud"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

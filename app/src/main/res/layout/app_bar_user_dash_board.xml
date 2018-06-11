@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEAEA"
+    tools:context=".Main2Activity"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_start_color"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+
+                    <include
+                        layout="@layout/mycard"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.AppBarLayout>
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/two"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <include layout="@layout/card2" />
+                </android.support.design.widget.AppBarLayout>
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/three"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+                <android.support.v7.widget.GridLayout
+                    android:id="@+id/grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l3"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:columnCount="2"
+                    app:rowCount="1">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/four"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l1"
+                        android:layout_marginRight="15dp"
+                        android:theme="@style/AppTheme.AppBarOverlay">
+
+                        <include
+                            layout="@layout/shortcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/five"
+                        android:layout_width="168dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l1"
+                        android:theme="@style/AppTheme.AppBarOverlay">
+
+                        <include
+                            layout="@layout/shortcard2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="0dp" />
+                    </android.support.design.widget.AppBarLayout>
+
+                </android.support.v7.widget.GridLayout>
+
+                <LinearLayout
+                    android:id="@+id/l6"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/grid"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <include layout="@layout/graphcard" />
+                </android.support.design.widget.AppBarLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="#30A7CD"
+        android:backgroundTint="#30A7CD"
+        android:backgroundTintMode="src_over"
+        app:backgroundTint="#1E647A"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</android.support.design.widget.CoordinatorLayout>

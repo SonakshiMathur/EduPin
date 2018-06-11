@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="@mipmap/user_bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="70dp"
+        android:text="Name  :"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="casual"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/usersname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/useremail"
+        android:layout_alignTop="@+id/textView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="143dp"
+        android:text="Email  :"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/useremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginStart="172dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:fontFamily="casual" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="221dp"
+        android:text="Phone  :"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/userphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usersname"
+        android:layout_alignTop="@+id/textView6"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:fontFamily="casual" />
+
+</RelativeLayout>
